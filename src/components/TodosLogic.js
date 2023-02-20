@@ -21,10 +21,18 @@ function TodosLogic() {
     },
   ]);
 
+  const delTodo = (id) => {
+    setTodos([
+      ...todos.filter((todo) => {
+        return todo.id !== id;
+      }),
+    ]);
+  };
+
   return (
     <div>
       <InputTodo />
-      <TodosList todos={todos} setTodos={setTodos} />
+      <TodosList todos={todos} setTodos={setTodos} delTodo={delTodo} />
     </div>
   );
 }
