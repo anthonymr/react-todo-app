@@ -1,9 +1,11 @@
-function TodosList() {
+import TodoItem from "./TodoItem";
+
+function TodosList({ todos, setTodos }) {
     return (
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      { todos.map((todo) => (
+        <TodoItem itemProp={todo} setTodos={setTodos} key={todo.id} />
+      ))}
     </ul>
     );
   }
