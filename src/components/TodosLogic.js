@@ -1,21 +1,22 @@
 import { useState } from 'react';
 import InputTodo from './InputTodo';
 import TodosList from './TodosList';
+import { v4 as uuidv4 } from "uuid";
 
 function TodosLogic() {
   const [todos, setTodos] = useState([
     {
-      id: 1,
+      id: uuidv4(),
       title: 'Setup development environment',
       completed: true,
     },
     {
-      id: 2,
+      id: uuidv4(),
       title: 'Develop website and add content',
       completed: false,
     },
     {
-      id: 3,
+      id: uuidv4(),
       title: 'Deploy to live server',
       completed: false,
     },
@@ -30,16 +31,14 @@ function TodosLogic() {
   };
 
   const addTodoItem = (title) => {
-    setTodos((prevstate) => {
-      return [
-        ...prevstate,
-        {
-          id: prevstate[prevstate.length - 1].id + 1,
-          title,
-          completed: false,
-        }
-      ];
-    });
+    setTodos([
+      ...todos,
+      {
+        id: uuidv4(),
+        title,
+        completed: false,
+      }
+    ]);
   };
 
   return (
