@@ -3,10 +3,12 @@ import TodosLogic from './TodosLogic';
 
 function TodoApp() {
     return (
-    <main>
-      <Header />
-      <TodosLogic />
-    </main>
+    <div className="wrapper">
+      <div className="todos">
+        <Header />
+        <TodosLogic />
+      </div>
+    </div>
     );
   }
   
