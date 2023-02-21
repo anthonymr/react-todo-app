@@ -21,9 +21,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Math magicians <a name="about-project"></a>
+# 📖 React Todos <a name="about-project"></a>
 
-**Math magicians** is a tool for storing all your scores...
+**React Todos** is a tool for storing all your todos...
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,13 +41,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Do all your maths with this web app**
+- **Store all your todos with this web app**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://anthonymr.github.io/math-magicians) [Coming soon]
+- [Live Demo](https://anthonymr.github.io/react-todos) [Coming soon]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +63,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/anthonymr/math-magicians.git
+  git clone https://github.com/anthonymr/react-todo-app.git
 ```
 
 ### Install
@@ -72,7 +72,7 @@ Install this project with:
 
 ```sh
   cd my-folder
-  git clone https://github.com/anthonymr/math-magicians.git
+  git clone https://github.com/anthonymr/react-todo-app.git
   npm install
 ```
 
@@ -82,7 +82,7 @@ Use this app by runing:
 
 ```sh
   cd my-folder
-  git clone https://github.com/anthonymr/math-magicians.git
+  git clone https://github.com/anthonymr/react-todo-app.git
   npm install
   npm start
 ```
@@ -93,7 +93,7 @@ Test this app by runing:
 
 ```sh
   cd my-folder
-  git clone https://github.com/anthonymr/math-magicians.git
+  git clone https://github.com/anthonymr/react-todo-app.git
   npm install
   npm test
 ```
@@ -116,8 +116,7 @@ You can deploy this project using: GitHub but if you want to deploy make sure yo
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add functionality**
-- [ ] **Add styles**
+- [ ] **Add extra pages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
