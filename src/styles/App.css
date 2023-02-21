@@ -73,3 +73,21 @@ header {
     color: #aeadad;
     text-align: center;
 }
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.active__class {
+    color: #8a4baf;
+    font-weight: 600;
+}
+
+.navbar > ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
