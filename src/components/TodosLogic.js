@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import InputTodo from './InputTodo';
 import TodosList from './TodosList';
-import { v4 as uuidv4 } from "uuid";
 
 function TodosLogic() {
   const [todos, setTodos] = useState([
@@ -24,9 +24,7 @@ function TodosLogic() {
 
   const delTodo = (id) => {
     setTodos([
-      ...todos.filter((todo) => {
-        return todo.id !== id;
-      }),
+      ...todos.filter((todo) => todo.id !== id),
     ]);
   };
 
@@ -37,7 +35,7 @@ function TodosLogic() {
         id: uuidv4(),
         title,
         completed: false,
-      }
+      },
     ]);
   };
 
@@ -45,10 +43,10 @@ function TodosLogic() {
     setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
-          todo.title = updatedTitle;
+          return { ...todo, title: updatedTitle };
         }
         return todo;
-      })
+      }),
     );
   };
 
