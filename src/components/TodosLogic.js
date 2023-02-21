@@ -29,9 +29,22 @@ function TodosLogic() {
     ]);
   };
 
+  const addTodoItem = (title) => {
+    setTodos((prevstate) => {
+      return [
+        ...prevstate,
+        {
+          id: prevstate[prevstate.length - 1].id + 1,
+          title,
+          completed: false,
+        }
+      ];
+    });
+  };
+
   return (
     <div>
-      <InputTodo />
+      <InputTodo addTodoItem={addTodoItem} />
       <TodosList todos={todos} setTodos={setTodos} delTodo={delTodo} />
     </div>
   );
